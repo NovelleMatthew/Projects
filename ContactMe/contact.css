@@ -2,10 +2,9 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: black;
 }
 body {
-  background-image: url(../images/black\ background.webp);
+  background-image: url(../images/black-background.png);
 }
 /*Navigation*/
 nav.sticky {
@@ -15,29 +14,31 @@ nav.sticky {
   right: 0;
 }
 .navigation {
-  background-color: rgb(24, 24, 24);
+  background-color: rgb(0, 0, 0);
   height: 4em;
+  box-shadow: 0px 5px 40px 10px rgb(255, 255, 255);
 }
 .logo {
+  color: white;
   display: inline;
   float: left;
   margin: 1em;
 }
 .search {
+  color: black;
   display: inline-block;
   margin-top: 1em;
 }
 .search-input {
-  color: black;
   height: 30px;
   width: 200px;
-  border-radius: 15%;
 }
 .nav-links-div {
   float: right;
   margin-top: 1.3em;
 }
 .nav-links {
+  color: white;
   font-size: 15px;
   font-weight: bold;
   text-decoration: none;
@@ -59,16 +60,22 @@ nav.sticky {
 /*Navigation*/
 /*ContactMe*/
 .contact-me-box {
-  background-color: rgba(112, 27, 94, 1);
-  height: 400px;
-  width: 800px;
-  border-radius: 10%;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: x-large;
+  padding: 30px;
+  height: 300px;
+  width: 500px;
   margin: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 15vh;
+  box-shadow: 0px 0px 10px 5px rgba(192 192 192),
+    -0px -0px 10px 5px rgba(192 192 192);
 }
 .contact-me-title {
   text-align: center;
   padding-top: 10px;
+}
+.contact-links {
+  text-decoration: none;
 }
 /*ContactMe*/

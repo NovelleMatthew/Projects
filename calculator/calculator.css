@@ -2,77 +2,31 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: black;
 }
 body {
-  background-image: url(../images/black\ background.webp);
+  background-image: url(../images/black-background.png);
 }
-/*Navigation*/
-nav.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+.calculator-name {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
 }
-.navigation {
-  background-color: rgb(24, 24, 24);
-  height: 4em;
-}
-.logo {
-  display: inline;
-  float: left;
-  margin: 1em;
-}
-.search {
-  display: inline-block;
-  margin-top: 1em;
-}
-.search-input {
-  color: black;
-  height: 30px;
-  width: 200px;
-  border-radius: 15%;
-}
-.nav-links-div {
-  float: right;
-  margin-top: 1.3em;
-}
-.nav-links {
-  font-size: 15px;
-  font-weight: bold;
-  text-decoration: none;
-  list-style: none;
-  display: inline;
-  margin-right: 1em;
-}
-.nav-links:hover {
-  color: rgb(52, 83, 239);
-}
-.profile-image {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: inline;
-  float: right;
-  margin: 0.5em;
-}
-/*Navigation*/
-.Calculator-Background {
+.calculator-background {
   margin: auto;
-  background-color: black;
+  margin-top: 30px;
+  background-color: white;
   width: 360px;
-  height: 550px;
+  height: 505px;
 }
 .display {
-  color: white;
-  background-color: rgba(128, 128, 128, 0.3);
-  margin: 5px 10px 5px 5px;
+  background-color: rgba(37, 37, 37, 0.5);
+  margin: auto;
+  padding: 5px;
+  font-size: 60px;
   width: 350px;
-  height: 100px;
+  height: 70px;
   text-align: right;
   font-size: 60px;
-  vertical-align: bottom;
-  line-height: 140px;
 }
 .numbers {
   color: white;
@@ -94,7 +48,7 @@ nav.sticky {
   text-align: center;
   vertical-align: middle;
   line-height: 50%;
-  border-radius: 20%;
+  border-radius: 5%;
   margin: 5px;
   width: 165px;
   height: 75px;
