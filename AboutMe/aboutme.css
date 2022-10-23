@@ -49,14 +49,7 @@ nav.sticky {
 .nav-links:hover {
   color: rgb(52, 83, 239);
 }
-.profile-image {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  display: inline;
-  float: right;
-  margin: 0.5em;
-}
+
 /*Navigation*/
 /*AboutMe*/
 .about-me-box {
