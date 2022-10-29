@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 body {
   background-image: url(./images/black-background.png);
@@ -15,37 +14,26 @@ nav.sticky {
   right: 0;
 }
 .navigation {
-  background-color: rgb(0, 0, 0);
-  height: 4em;
-  box-shadow: 0px 5px 40px 10px rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 4rem;
+  box-shadow: 0px 5px 40px 10px rgb(233, 76, 76);
 }
 .logo {
   color: white;
   display: inline;
   float: left;
-  margin: 1em;
+  margin: 1em 0em 1.2em 1.4em;
 }
-.search {
-  color: black;
-  display: inline-block;
-  margin-top: 1em;
-}
-.search-input {
-  height: 30px;
-  width: 200px;
-}
-.nav-links-div {
-  float: right;
-  margin-top: 1.3em;
+nav ul li {
+  display: inline;
 }
 .nav-links {
   color: white;
-  font-size: 15px;
-  font-weight: bold;
+  display: inline;
   text-decoration: none;
   list-style: none;
-  display: inline;
-  margin-right: 1em;
+  float: right;
+  margin: 1.5em 1.5em 1.3em 1em;
 }
 .nav-links:hover {
   color: rgb(52, 83, 239);
@@ -55,24 +43,23 @@ nav.sticky {
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 50px;
+  justify-self: center;
 }
 .project-border {
   background-color: rgb(255, 255, 255);
-  height: 350px;
-  width: 250px;
-  box-shadow: 5px 5px 30px 5px rgb(255, 255, 255),
-    -5px -5px 30px 5px rgb(255, 255, 255);
+  border-radius: .2em;
+  margin: 8em 6em 0em 6em;
+  height: 20em;
+  width: 15em;
+  box-shadow: 5px 5px 30px 5px rgb(233, 76, 76),
+    -5px -5px 30px 5px rgb(233, 76, 76);
 }
 .project-image {
-  height: 200px;
-  width: 250px;
-  padding: 10px;
+  height: 11em;
+  width: 100%;
+  padding: 5%;
 }
 .title-border {
-  color: blue;
   font-size: large;
   text-align: center;
   text-decoration: none;
@@ -80,4 +67,3 @@ nav.sticky {
 .project-description {
   text-align: center;
 }
-/*Projects*/

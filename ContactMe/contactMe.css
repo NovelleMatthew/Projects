@@ -40,8 +40,8 @@ nav ul li {
 }
 /*Navigation*/
 
-/*AboutMe*/
-.about-me-box {
+/*ContactMe*/
+.contact-me-box {
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
   text-align: center;
@@ -54,8 +54,11 @@ nav ul li {
   box-shadow: 5px 5px 30px 5px rgb(233, 76, 76),
     -5px -5px 30px 5px rgb(233, 76, 76);
 }
-.about-me-title {
+.contact-me-title {
   text-align: center;
   padding-top: 10px;
 }
-/*AboutMe*/
+.contact-links {
+  text-decoration: none;
+}
+/*ContactMe*/
