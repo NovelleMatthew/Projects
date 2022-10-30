@@ -3,8 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-image: url(./images/black-background.png);
+  background-image: radial-gradient(at 80% -20%, #fff 10%, transparent 40%),
+    radial-gradient(at 0% 70%, #fff, transparent 50%),
+    radial-gradient(at 0% 0%, #0ff, transparent),
+    radial-gradient(at 80% 40%, #ff9, transparent 40%),
+    radial-gradient(at 100% 100%, #675ee3, transparent);
+  background-attachment: fixed;
 }
 /*Navigation*/
 nav.sticky {
@@ -14,9 +22,9 @@ nav.sticky {
   right: 0;
 }
 .navigation {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(66, 129, 164, 0.8);
   height: 4rem;
-  box-shadow: 0px 5px 40px 10px rgb(233, 76, 76);
+  box-shadow: 0px 5px 40px 10px rgba(57, 91, 100, 0.8);
 }
 .logo {
   color: white;
@@ -46,13 +54,12 @@ nav ul li {
   justify-self: center;
 }
 .project-border {
-  background-color: rgb(255, 255, 255);
-  border-radius: .2em;
-  margin: 8em 6em 0em 6em;
+  background-color: rgba(66, 129, 164, 0.4);
+  border-radius: 0.2em;
+  margin: 5em 6em 0em 6em;
   height: 20em;
   width: 15em;
-  box-shadow: 5px 5px 30px 5px rgb(233, 76, 76),
-    -5px -5px 30px 5px rgb(233, 76, 76);
+  box-shadow: 10px 10px 20px 5px rgba(57, 91, 100, 0.8);
 }
 .project-image {
   height: 11em;
@@ -66,4 +73,39 @@ nav ul li {
 }
 .project-description {
   text-align: center;
+}
+.contact-me-box {
+  background-color: rgba(66, 129, 164, 0.3);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: x-large;
+  padding: 10px;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  margin-top: 10em;
+  box-shadow: 10px 10px 20px 5px rgba(57, 91, 100, 0.8);
+}
+.contact-me-title {
+  text-align: center;
+  padding-top: 10px;
+}
+.contact-links {
+  text-decoration: none;
+}
+.about-me-box {
+  background-color: rgba(66, 129, 164, 0.3);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: x-large;
+  padding: 10px;
+  height: 300px;
+  width: 500px;
+  margin: auto;
+  margin-top: 15vh;
+  box-shadow: 10px 10px 20px 5px rgba(57, 91, 100, 0.8);
+}
+.about-me-title {
+  text-align: center;
+  padding-top: 10px;
 }
