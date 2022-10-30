@@ -14,6 +14,7 @@ body {
     radial-gradient(at 100% 100%, #675ee3, transparent);
   background-attachment: fixed;
 }
+
 /*Navigation*/
 nav.sticky {
   position: fixed;
@@ -46,6 +47,12 @@ nav ul li {
 .nav-links:hover {
   color: rgb(52, 83, 239);
 }
+.anchor {
+  display: block;
+  height: 115px; /*same height as header*/
+  margin-top: -115px; /*same height as header*/
+  visibility: hidden;
+}
 /*Navigation*/
 /*Projects*/
 .project-container {
@@ -67,6 +74,7 @@ nav ul li {
   padding: 5%;
 }
 .title-border {
+  color: blue;
   font-size: large;
   text-align: center;
   text-decoration: none;
@@ -108,4 +116,63 @@ nav ul li {
 .about-me-title {
   text-align: center;
   padding-top: 10px;
+}
+/* For extremely small screen devices (595px and below) */
+@media screen and (max-width: 595px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+  }
+  .project-border {
+    margin: 8em 30% 0em 30%;
+    height: 20em;
+    width: 15em;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 600px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-self: center;
+  }
+  .project-border {
+    margin: 8em 15% 0em 15%;
+    height: 20em;
+    width: 15em;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+  }
+  .project-border {
+    margin: 8em 20% 0em 20%;
+    height: 20em;
+    width: 15em;
+  }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: center;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+  }
 }
