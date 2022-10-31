@@ -4,47 +4,19 @@
   box-sizing: border-box;
 }
 body {
-  background-image: radial-gradient(at 80% -20%, #fff 10%, transparent 40%),
-    radial-gradient(at 0% 70%, #fff, transparent 50%),
-    radial-gradient(at 0% 0%, #0ff, transparent),
-    radial-gradient(at 80% 40%, #ff9, transparent 40%),
-    radial-gradient(at 100% 100%, #675ee3, transparent);
+  background-image: radial-gradient(at 80% -20%, #78bdc4 10%, transparent 40%),
+    radial-gradient(at 0% 70%, #f7f8f3, transparent 50%),
+    radial-gradient(at 0% 0%, #012c3d, transparent),
+    radial-gradient(at 80% 40%, #78bdc4, transparent 40%),
+    radial-gradient(at 100% 100%, #f8444f, transparent);
   background-attachment: fixed;
 }
-/*Navigation*/
-nav.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+:root {
+  --color1: #f8444f;
+  --color2: #f7f8f3;
+  --color3: #78bdc4;
+  --color4: #012c3d;
 }
-.navigation {
-  background-color: rgba(66, 129, 164, 0.8);
-  height: 4rem;
-  box-shadow: 0px 5px 40px 10px rgba(57, 91, 100, 0.8);
-}
-.logo {
-  color: white;
-  display: inline;
-  float: left;
-  margin: 1em 0em 1.2em 1.4em;
-}
-nav ul li {
-  display: inline;
-}
-.nav-links {
-  color: white;
-  display: inline;
-  text-decoration: none;
-  list-style: none;
-  float: right;
-  margin: 1.5em 1.5em 1.3em 1em;
-}
-.nav-links:hover {
-  color: rgb(52, 83, 239);
-}
-/*Navigation*/
-
 .calculator-name {
   margin: 0.5em;
   font-size: xx-large;
@@ -54,23 +26,22 @@ nav ul li {
 .calculator-background {
   margin: auto;
   margin-top: 30px;
-  background-color: rgba(66, 129, 164, 0.4);
+  background-color: var(--color3);
   width: 360px;
   height: 505px;
 }
 .display {
-  background-color: rgba(37, 37, 37, 0.5);
-  margin: auto;
+  background-color: var(--color2);
   padding: 5px;
   font-size: 60px;
-  width: 350px;
-  height: 70px;
+  width: 100%;
+  height: 80px;
   text-align: right;
   font-size: 60px;
 }
 .numbers {
   color: white;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--color4);
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -83,7 +54,7 @@ nav ul li {
 }
 .number-0 {
   color: white;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--color4);
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -96,7 +67,7 @@ nav ul li {
 }
 .operation {
   color: white;
-  background-color: rgb(255, 94, 0);
+  background-color: var(--color1);
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -109,7 +80,7 @@ nav ul li {
 }
 .clear {
   color: white;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--color4);
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -122,7 +93,7 @@ nav ul li {
 }
 .decimal {
   color: white;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--color4);
   font-size: 30px;
   text-align: center;
   vertical-align: middle;
@@ -135,7 +106,7 @@ nav ul li {
 }
 .equal {
   color: white;
-  background-color: rgb(49, 49, 49);
+  background-color: var(--color4);
   font-size: 30px;
   text-align: center;
   vertical-align: middle;

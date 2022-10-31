@@ -2,19 +2,25 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--color1);
 }
 html {
   scroll-behavior: smooth;
 }
 body {
-  background-image: radial-gradient(at 80% -20%, #fff 10%, transparent 40%),
-    radial-gradient(at 0% 70%, #fff, transparent 50%),
-    radial-gradient(at 0% 0%, #0ff, transparent),
-    radial-gradient(at 80% 40%, #ff9, transparent 40%),
-    radial-gradient(at 100% 100%, #675ee3, transparent);
+  background-image: radial-gradient(at 80% -20%, #78bdc4 10%, transparent 40%),
+    radial-gradient(at 0% 70%, #f7f8f3, transparent 50%),
+    radial-gradient(at 0% 0%, #012c3d, transparent),
+    radial-gradient(at 80% 40%, #78bdc4, transparent 40%),
+    radial-gradient(at 100% 100%, #f8444f, transparent);
   background-attachment: fixed;
 }
-
+:root {
+  --color1: #f8444f;
+  --color2: #f7f8f3;
+  --color3: #78bdc4;
+  --color4: #012c3d;
+}
 /*Navigation*/
 nav.sticky {
   position: fixed;
@@ -23,12 +29,11 @@ nav.sticky {
   right: 0;
 }
 .navigation {
-  background-color: rgba(66, 129, 164, 0.8);
+  background-color: var(--color4);
   height: 4rem;
   box-shadow: 0px 5px 40px 10px rgba(57, 91, 100, 0.8);
 }
 .logo {
-  color: white;
   display: inline;
   float: left;
   margin: 1em 0em 1.2em 1.4em;
@@ -37,7 +42,6 @@ nav ul li {
   display: inline;
 }
 .nav-links {
-  color: white;
   display: inline;
   text-decoration: none;
   list-style: none;
@@ -58,12 +62,11 @@ nav ul li {
 .project-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-self: center;
 }
 .project-border {
-  background-color: rgba(66, 129, 164, 0.4);
+  background-color: var(--color3);
   border-radius: 0.2em;
-  margin: 5em 6em 0em 6em;
+  margin: 7em 6em 0em 6em;
   height: 20em;
   width: 15em;
   box-shadow: 10px 10px 20px 5px rgba(57, 91, 100, 0.8);
@@ -72,6 +75,7 @@ nav ul li {
   height: 11em;
   width: 100%;
   padding: 5%;
+  border-radius: 1.1em;
 }
 .title-border {
   color: blue;
@@ -83,51 +87,49 @@ nav ul li {
   text-align: center;
 }
 .contact-me-box {
-  background-color: rgba(66, 129, 164, 0.3);
-  color: rgb(0, 0, 0);
-  text-align: center;
+  background-color: var(--color3);
   font-size: x-large;
   padding: 10px;
   height: 300px;
   width: 500px;
   margin: auto;
-  margin-top: 10em;
+  margin-top: 5em;
   box-shadow: 10px 10px 20px 5px rgba(57, 91, 100, 0.8);
+}
+.contact-me-box p {
+  padding: 10px;
 }
 .contact-me-title {
   text-align: center;
   padding-top: 10px;
 }
 .contact-links {
+  color: var(--color4);
   text-decoration: none;
 }
 .about-me-box {
-  background-color: rgba(66, 129, 164, 0.3);
-  color: rgb(0, 0, 0);
+  background-color: var(--color3);
   text-align: center;
   font-size: x-large;
   padding: 10px;
   height: 300px;
   width: 500px;
   margin: auto;
-  margin-top: 15vh;
+  margin-top: 5em;
   box-shadow: 10px 10px 20px 5px rgba(57, 91, 100, 0.8);
 }
 .about-me-title {
   text-align: center;
   padding-top: 10px;
 }
-/* For extremely small screen devices (595px and below) */
-@media screen and (max-width: 595px) {
+/* For extremely small screen devices (599px and below) */
+@media screen and (max-width: 599px) {
   .project-container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    justify-self: center;
   }
   .project-border {
-    margin: 8em 30% 0em 30%;
-    height: 20em;
-    width: 15em;
+    margin: 7em 0em 0em 8em;
   }
 }
 
@@ -136,12 +138,9 @@ nav ul li {
   .project-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-self: center;
   }
   .project-border {
-    margin: 8em 15% 0em 15%;
-    height: 20em;
-    width: 15em;
+    margin: 7em 0em 0em 1.8em;
   }
 }
 
@@ -149,13 +148,10 @@ nav ul li {
 @media only screen and (min-width: 768px) {
   .project-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-self: center;
+    grid-template-columns: repeat(2, 1fr);
   }
   .project-border {
-    margin: 8em 20% 0em 20%;
-    height: 20em;
-    width: 15em;
+    margin: 7em 0em 0em 4.4em;
   }
 }
 
@@ -164,7 +160,9 @@ nav ul li {
   .project-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    justify-self: center;
+  }
+  .project-border {
+    margin: 7em 0em 0em 4.5em;
   }
 }
 
@@ -173,6 +171,8 @@ nav ul li {
   .project-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-self: center;
+  }
+  .project-border {
+    margin: 5em 0em 0em 4.5em;
   }
 }
